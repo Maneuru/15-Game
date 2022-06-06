@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style_15_game.css">
+    <link rel="shortcut icon" href="../../images/logoico (1).ico"/>
+    <title>Giochi</title>
+</head>
+<body>
+    <div id="top-bar">
+        <img src="../../images/logo.png" alt="Logo">
+    </div>
+
+    <div id="page">
+        <canvas id="canvas"></canvas>
+        
+    </div>
+
+    <div id="lateral">
+        <div id="container_time">
+            <h1 id="time">00 : 00</h1>
+            <h2 id="moves"></h2>
+            <p>Set the difficulty</p>
+            <div class="cont">
+                <div class="diffDiv">
+                    <button class="diff" onclick="btnSetDiff(3)">Easy</button>
+                    <button class="diff" onclick="btnSetDiff(4)">Normal</button>
+                    <button class="diff" onclick="btnSetDiff(5)">intermediate</button>
+                </div>
+                <div class="diffDiv">
+                    <button class="diff" onclick="btnSetDiff(6)">Hard</button>
+                    <button class="diff" onclick="btnSetDiff(7)">Master</button>
+                    <button class="diff" onclick="btnSetDiff(10)">Insane</button>
+                </div>
+            </div>
+            
+            <button id = "btnShuffle" class="btn">New Game</button>
+        </div>
+    </div>
+
+    <script src="./script_15_game.js"></script>
+    <script src="./script.js"></script>
+
+</body>
+</html>
